@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto";
+  list-style: none;
 }
 
 img[src$=".svg"] {
@@ -54,11 +55,11 @@ body {
   margin-right: 2rem;
 }
 
-.upper > .right > .cat-image {
+.upper .right .cat-image {
   height: 60px;
 }
 
-.lower > .left > .cat-image {
+.lower .left .cat-image {
   height: 90px;
   margin-right: 24px;
 }
@@ -70,11 +71,11 @@ body {
   margin-top: 42px;
 }
 
-.lower > .right {
+.lower .right {
   justify-self: end;
 }
 
-.lower > .right > button {
+.lower .right button {
   height: 54px;
   width: 130px;
   background-color: #1992d4;
@@ -110,8 +111,7 @@ body {
   font-weight: 500;
 }
 
-ul {
-  list-style: none;
+.sidebar ul {
   margin-left: 1rem;
 }
 
@@ -122,7 +122,7 @@ ul {
   margin-bottom: 2rem;
 }
 
-.side-item > img {
+.side-item img {
   position: relative;
   bottom: 2px;
   filter: var(--white);
@@ -140,4 +140,74 @@ ul {
 
 .content {
   background-color: #e2e8f0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 2.5rem 2.5rem 2rem 2rem;
+}
+
+.content h2 {
+  font-weight: 500;
+}
+
+.projects {
+  grid-row: 1 / 3;
+  width: 56vw;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 3px 5px 4px rgba(0,0,0,0.12);
+  padding: 2rem;
+}
+
+.card p {
+  color: #636363;
+  font-size: 1.2rem;
+}
+
+.announcements .card {
+  padding-top: 3rem;
+}
+
+.announcements .card p {
+  font-size: 1rem;
+}
+
+.card li.item {
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+hr {
+  border: 1px solid #dcdcdc;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.content h2 {
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+}
+
+.announcements {
+  margin-bottom: 3rem;
+}
+
+.trending img {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.trending li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.trending li:last-child {
+  margin-bottom: 0rem;
+}
+
+.trending li h3 {
+  font-weight: 400;
 }
