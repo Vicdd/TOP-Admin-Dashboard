@@ -23,7 +23,7 @@ body {
   grid-column: 2 / 3;
   z-index: 100;
   box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-  padding: 1.5rem 5rem 2rem 3rem;
+  padding: 1.5rem 6rem 1.5rem 4rem;
 }
 
 .upper {
@@ -31,34 +31,59 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-.search-bar {
+.left {
   display: flex;
   align-items: center;
 }
 
 .search-box {
   background-color: #e2e8f0;
-  height: 2.5rem;
+  height: 2.6rem;
   width: 42vw;
-  border-radius: 20px;
+  border-radius: 24px;
   margin-left: 15px;
 }
 
-.right-side {
+.upper > .right {
   justify-self: end;
   display: grid;
   grid-template-columns: 40px 60px 1fr;
   align-items: center;
   justify-items: center;
-  gap: 30px
+  gap: 36px;
+  margin-right: 2rem;
 }
 
-.right-side > .cat-image {
+.upper > .right > .cat-image {
   height: 60px;
+}
+
+.lower > .left > .cat-image {
+  height: 90px;
+  margin-right: 24px;
 }
 
 .lower {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 42px;
+}
+
+.lower > .right {
+  justify-self: end;
+}
+
+.lower > .right > button {
+  height: 54px;
+  width: 130px;
+  background-color: #1992d4;
+  color: white;
+  border: none;
+  border-radius: 42px;
+  margin-left: 30px;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .sidebar {
