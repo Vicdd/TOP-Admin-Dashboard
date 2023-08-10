@@ -16,8 +16,7 @@ img[src$=".svg"] {
 body {
   display: grid;
   grid-template-columns: 1fr 3.8fr;
-  grid-template-rows: 1fr 3fr;
-  height: 100vh;
+  grid-template-rows: 1fr 5fr;
 }
 
 .header {
@@ -25,6 +24,7 @@ body {
   z-index: 100;
   box-shadow: 0 3px 5px rgba(0,0,0,0.2);
   padding: 1.5rem 6rem 1.5rem 4rem;
+  height:fit-content;
 }
 
 .upper {
@@ -153,6 +153,36 @@ body {
 .projects {
   grid-row: 1 / 3;
   width: 56vw;
+}
+
+.projects div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+.card.main {
+  border-left: 12px solid #f0b429;
+  display: block;
+  padding-top: 3rem;
+}
+
+.card.main .icons {
+  padding: 4rem 0 0 0;
+  display: flex;
+  justify-content: end;
+}
+
+.card.main h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.card.main p {
+  padding-right: 6rem;
+  font-size: 1.3rem;
 }
 
 .card {
