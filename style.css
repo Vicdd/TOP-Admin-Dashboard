@@ -16,7 +16,7 @@ img[src$=".svg"] {
 body {
   display: grid;
   grid-template-columns: 1fr 3.8fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 4.4fr;
 }
 
 .header {
@@ -158,7 +158,7 @@ body {
 .projects div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 2.4rem;
   padding-right: 2rem;
 }
 
@@ -166,6 +166,7 @@ body {
   border-left: 12px solid #f0b429;
   display: block;
   padding-top: 3rem;
+  padding-bottom: 2.4rem;
 }
 
 .card.main .icons {
@@ -219,8 +220,8 @@ hr {
   font-size: 1.6rem;
 }
 
-.announcements {
-  margin-bottom: 3rem;
+.trending {
+  align-self: end;
 }
 
 .trending img {
